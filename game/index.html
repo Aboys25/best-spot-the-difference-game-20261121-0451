@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spot the Difference — Harbour, Market &amp; Garden</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #14161d; overflow: hidden; }
+  #wrap { display: flex; align-items: center; justify-content: center; height: 100%; }
+  canvas { max-width: 100vw; max-height: 100vh; width: auto; height: auto; background: #14161d; }
+  #status { position: fixed; left: 8px; bottom: 6px; margin: 0; color: #9aa0b4; font: 12px system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="1280" height="720"></canvas></div>
+<p id="status">Spot the Difference — click a difference in either picture. H hint, P pause, R restart, M mute.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
